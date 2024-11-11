@@ -1,7 +1,7 @@
 def decode_message( s: str, p: str) -> bool:
     dp = [[False] * (len(p) + 1) for _ in range(len(s) + 1)]
-    
-    # Initialize the DP table for the case where both strings are empty
+
+# Initialize the DP table for the case where both strings are empty
     dp[0][0] = True
     
     # Handle patterns that start with '*' (matching empty string)
